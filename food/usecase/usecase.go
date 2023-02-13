@@ -2,7 +2,7 @@ package usecase
 
 import (
 	"context"
-	"goDDD/domain"
+	"digitalPet/domain"
 )
 
 type foodUsecase struct {

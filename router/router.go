@@ -1,13 +1,13 @@
 package router
 
 import (
-	"goDDD/config"
-	_foodHttp "goDDD/food/delivery/http"
-	_foodRepo "goDDD/food/repository/postgresql"
-	_foodUsecase "goDDD/food/usecase"
-	_petHttp "goDDD/pet/delivery/http"
-	_petRepo "goDDD/pet/repository/postgresql"
-	_petUsecase "goDDD/pet/usecase"
+	"digitalPet/config"
+	_foodHttp "digitalPet/food/delivery/http"
+	_foodRepo "digitalPet/food/repository/postgresql"
+	_foodUsecase "digitalPet/food/usecase"
+	_petHttp "digitalPet/pet/delivery/http"
+	_petRepo "digitalPet/pet/repository/postgresql"
+	_petUsecase "digitalPet/pet/usecase"
 
 	"github.com/gin-gonic/gin"
 )

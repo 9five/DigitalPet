@@ -1,8 +1,8 @@
 package handler
 
 import (
+	"digitalPet/domain"
 	"errors"
-	"goDDD/domain"
 	"net/http"
 	"strconv"
 

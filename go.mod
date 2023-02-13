@@ -1,4 +1,4 @@
-module goDDD
+module digitalPet
 
 go 1.18
 

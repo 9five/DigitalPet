@@ -1,7 +1,7 @@
 package main
 
 import (
-	"goDDD/router"
+	"digitalPet/router"
 )
 
 func main() {

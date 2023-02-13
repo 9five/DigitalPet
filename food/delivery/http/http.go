@@ -1,7 +1,7 @@
 package handler
 
 import (
-	"goDDD/domain"
+	"digitalPet/domain"
 	"net/http"
 
 	"github.com/gin-gonic/gin"

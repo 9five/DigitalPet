@@ -2,7 +2,7 @@ package postgresql
 
 import (
 	"context"
-	"goDDD/domain"
+	"digitalPet/domain"
 
 	"gorm.io/gorm"
 	// "gorm.io/gorm/clause"
