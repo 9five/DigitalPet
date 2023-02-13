@@ -2,10 +2,10 @@ package router
 
 import (
 	"goDDD/config"
-	_foodHandler "goDDD/food/delivery/handler"
+	_foodHttp "goDDD/food/delivery/http"
 	_foodRepo "goDDD/food/repository/postgresql"
 	_foodUsecase "goDDD/food/usecase"
-	_petHandler "goDDD/pet/delivery/handler"
+	_petHttp "goDDD/pet/delivery/http"
 	_petRepo "goDDD/pet/repository/postgresql"
 	_petUsecase "goDDD/pet/usecase"
 
@@ -27,11 +27,11 @@ func setupPet(router *gin.Engine) {
 	petUsecase := _petUsecase.NewPetUsecase(petRepo)
 	foodRepo := _foodRepo.NewPostgresqlFoodRepository(config.DB)
 	foodUsecase := _foodUsecase.NewFoodUsecase(foodRepo)
-	_petHandler.NewPetHandler(router.Group("/api/pet"), petUsecase, foodUsecase)
+	_petHttp.NewPetHandler(router.Group("/api/pet"), petUsecase, foodUsecase)
 }
 
 func setupFood(router *gin.Engine) {
 	foodRepo := _foodRepo.NewPostgresqlFoodRepository(config.DB)
 	foodUsecase := _foodUsecase.NewFoodUsecase(foodRepo)
-	_foodHandler.NewFoodHandler(router.Group("api/food"), foodUsecase)
+	_foodHttp.NewFoodHandler(router.Group("api/food"), foodUsecase)
 }
